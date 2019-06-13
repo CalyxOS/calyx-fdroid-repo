@@ -1,1 +1,0 @@
-Criptografar os arquivos e Comunicações. Compatível com o padrão OpenPGP.

@@ -1,1 +1,0 @@
-Szyfrowanie plików i komunikacji. Kompatybilny ze standardem OpenPGP.

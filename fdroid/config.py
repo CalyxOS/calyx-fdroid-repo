@@ -1,11 +1,12 @@
-repo_url = "file:///system/fdroid/calyx/repo/"
-repo_name = "CalyxOS Local Repository"
+repo_url = "https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/"
+repo_name = "The Calyx Institute F-Droid repo (testing)"
 repo_icon = "fdroid-icon.png"
 repo_description = """
-This is a repository of apps to be used with CalyxOS. It is installed
-to the system partition, and meant to be used to initially install
-apps when offline. It contains a limited number of applications deemed
-suitable for inclusion with CalyxOS.
+This is a copy of the Calyx Institute F-Droid repository for test purposes.
+It is a repository of apps to be used with CalyxOS.
+Applications in this repository are either official binaries
+built from the source by the developers of calyxos.org using
+the tools on https://gitlab.com/u/fdroid
 """
 
 archive_older = 0

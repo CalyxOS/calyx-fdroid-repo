@@ -1,1 +1,0 @@
-Encrypt your Files and Communications. Compatible with the OpenPGP Standard.

@@ -1,1 +1,0 @@
-Šifruoti failus ir komunikacijos slaptumas. Suderinamas su OpenPGP standarto.

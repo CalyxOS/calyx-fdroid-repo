@@ -5,7 +5,10 @@ Currently included (alphabetically):
 
 * 
 
-Not meant to be added to F-Droid manually, this is shipped with CalyxOS
+Add this URL to F-Droid:
+https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=TBD
+
+[![Repo URL QRcode](fdroid/public/repo-qrcode.png)](https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=TBD)
 
 Both, this Gitlab repository and this unofficial F-Droid repository
 are not affiliated to, nor have been authorized, sponsored or otherwise approved by the app developers.
