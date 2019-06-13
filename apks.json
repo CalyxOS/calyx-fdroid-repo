@@ -1,5 +1,104 @@
 [
   {
+    "name": "Briar",
+    "baseUrl": "https://f-droid.org/repo/org.briarproject.briar.android_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.briarproject.briar.android.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    },
+    "ignoreErrors": true
+  },
+  {
+    "name": "CalyxVPN",
+    "baseUrl": "https://f-droid.org/repo/org.calyxinstitute.vpn_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.calyxinstitute.vpn.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "Conversations",
+    "baseUrl": "https://f-droid.org/repo/eu.siacs.conversations_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/eu.siacs.conversations.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "DuckDuckGoPrivacyBrowser",
+    "baseUrl": "https://f-droid.org/repo/com.duckduckgo.mobile.android_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/com.duckduckgo.mobile.android.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "K-9Mail",
+    "baseUrl": "https://f-droid.org/repo/com.fsck.k9_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/com.fsck.k9.txt",
+      "regex": "Current Version Code:(\\d+)"
+    }
+  },
+  {
+    "name": "MozillaNlpBackend",
+    "baseUrl": "https://f-droid.org/repo/org.microg.nlp.backend.ichnaea_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.microg.nlp.backend.ichnaea.txt",
+      "regex": "Current Version Code:(\\d+)"
+    }
+  },
+  {
+    "name": "MuPDFviewer",
+    "baseUrl": "https://f-droid.org/repo/com.artifex.mupdf.viewer.app_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/com.artifex.mupdf.viewer.app.txt",
+      "regex": "Current Version Code:(\\d+)"
+    },
+    "ignoreErrors": true
+  },
+  {
+    "name": "OONIProbe",
+    "baseUrl": "https://f-droid.org/repo/org.openobservatory.ooniprobe_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.openobservatory.ooniprobe.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "OpenKeychain",
+    "baseUrl": "https://f-droid.org/repo/org.sufficientlysecure.keychain_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.sufficientlysecure.keychain.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "RiseupVPN",
+    "baseUrl": "https://f-droid.org/repo/se.leap.riseupvpn_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/se.leap.riseupvpn.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "Weather",
+    "baseUrl": "https://f-droid.org/repo/org.secuso.privacyfriendlyweather_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/org.secuso.privacyfriendlyweather.yml",
+      "regex": "CurrentVersionCode: (\\d+)"
+    }
+  },
+  {
+    "name": "YubicoAuthenticator",
+    "baseUrl": "https://f-droid.org/repo/com.yubico.yubioath_{ver}.apk",
+    "version": {
+      "url": "https://gitlab.com/fdroid/fdroiddata/raw/master/metadata/com.yubico.yubioath.txt",
+      "regex": "Current Version Code:(\\d+)"
+    },
+    "ignoreErrors": true
+  },
+  {
     "name": "Signal",
     "baseUrl": "https://updates.signal.org/android/Signal-website-universal-release-{ver}.apk",
     "version": {
