@@ -9,5 +9,5 @@ archive_older = 0
 
 local_copy_dir = "/fdroid"
 
-keystore = "../keystore.bks"
+keystore = "../keystore.jks"
 repo_keyalias = "calyxos"

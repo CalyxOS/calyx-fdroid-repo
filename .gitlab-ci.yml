@@ -1,8 +1,8 @@
 image: ubuntu:latest
 
 before_script:
-  - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
-  - chmod 600 fdroid/config.py keystore.bks
+  - echo $fdroid_keystore_base64 | base64 -d >keystore.jks
+  - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
   - apt-get -qq update && apt-get -qqy install --no-install-recommends fdroidserver wget
 
