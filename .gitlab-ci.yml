@@ -1,0 +1,30 @@
+image: ubuntu:latest
+
+before_script:
+  - echo $fdroid_keystore_base64 | base64 -d >keystore.bks
+  - chmod 600 fdroid/config.py keystore.bks
+  - mkdir -p fdroid/repo
+  - apt-get -qq update && apt-get -qqy install --no-install-recommends fdroidserver wget
+
+pages:
+  stage: deploy
+  script:
+  - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm -f $line; done < ../../cleanup.txt)
+  - ./download.py
+  - cd fdroid
+  - echo "keypass=\"$fdroid_keypass\"" >>config.py
+  - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
+  - fdroid update
+  - mkdir /fdroid && fdroid server update
+  - rm -rf /fdroid/archive
+  - cd .. && mkdir public && mv -v /fdroid public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  - schedules
+  cache:
+    paths:
+    - fdroid
+    - cache

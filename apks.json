@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Firefox",
+    "baseUrl": "https://download.mozilla.org/?product=fennec-latest&os=android{arch}&lang=multi",
+    "architectures": ["", "-x86"]
+  },
+  {
+    "name": "Firefox Beta",
+    "baseUrl": "https://download.mozilla.org/?product=fennec-beta-latest&os=android{arch}&lang=multi",
+    "architectures": ["", "-x86"],
+    "ignoreErrors": true
+  },
+  {
+    "name": "Firefox Nightly",
+    "baseUrl": "https://download.mozilla.org/?product=fennec-nightly-latest&os=android{arch}&lang=multi",
+    "architectures": ["", "-x86"],
+    "ignoreErrors": true
+  },
+  {
+    "name": "Firefox Focus",
+    "baseUrl": "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Focus-{arch}.apk",
+    "architectures": ["arm", "x86"]
+  },
+  {
+    "name": "Firefox Klar",
+    "baseUrl": "https://download-installer.cdn.mozilla.net/pub/android/focus/latest/Klar-{arch}.apk",
+    "architectures": ["arm", "x86"]
+  },
+  {
+    "name": "Brave",
+    "baseUrl": "https://github.com/brave/browser-android-tabs/releases/download/{ver}/Brave{arch}.apk",
+    "architectures": ["arm", "x86"],
+    "version": {
+      "url": "https://api.github.com/repos/brave/browser-android-tabs/releases/latest",
+      "json": "tag_name"
+    }
+  },
+  {
+    "name": "Signal",
+    "baseUrl": "https://updates.signal.org/android/Signal-website-universal-release-{ver}.apk",
+    "version": {
+      "url": "https://updates.signal.org/android/latest.json",
+      "json": "versionName"
+    }
+  },
+  {
+    "name": "Abrowser",
+    "baseUrl": "https://github.com/proninyaroslav/abrowser-android/releases/download/{ver}/abrowser-{ver}.en-US.android-{arch}.apk",
+    "architectures": ["arm", "aarch64", "i686", "x86_64"],
+    "version": {
+      "url": "https://api.github.com/repos/proninyaroslav/abrowser-android/releases/latest",
+      "json": "tag_name"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+License:MPL-2.0
+Web Site:https://support.mozilla.org/products/focus-firefox
+Issue Tracker:https://bugzilla.mozilla.org/
+Donate:https://donate.mozilla.org/
+Summary:Firefox Focus
+Categories:Internet
+Description:
+Firefox Focus gives you a dedicated privacy browser with tracking protection and content blocking on your Android phone or tablet.
+.
