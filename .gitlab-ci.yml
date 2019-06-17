@@ -6,7 +6,7 @@ before_script:
   - mkdir -p fdroid/repo
   - apt-get -qq update && apt-get -qqy install --no-install-recommends fdroidserver wget
 
-pages:
+fdroid-repo:
   stage: deploy
   script:
   - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm -f $line; done < ../../cleanup.txt)
@@ -17,10 +17,9 @@ pages:
   - fdroid update
   - mkdir /fdroid && fdroid server update
   - rm -rf /fdroid/archive
-  - cd .. && mkdir public && mv -v /fdroid public
   artifacts:
     paths:
-    - public
+    - /fdroid
   only:
   - master
   - schedules

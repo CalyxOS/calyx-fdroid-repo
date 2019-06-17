@@ -1,8 +1,11 @@
-repo_url = "https://calyxos.gitlab.io/calyxos-fdroid-repo/fdroid/"
-repo_name = "CalyxOS F-Droid repo (local)"
+repo_url = "file:///system/fdroid/calyx/repo/"
+repo_name = "CalyxOS Local Repository"
 repo_icon = "fdroid-icon.png"
 repo_description = """
-CalyxOS Local F-Droid repo (not so local anymore though!)
+This is a repository of apps to be used with CalyxOS. It is installed
+to the system partition, and meant to be used to initially install
+apps when offline. It contains a limited number of applications deemed
+suitable for inclusion with CalyxOS.
 """
 
 archive_older = 0
@@ -10,4 +13,5 @@ archive_older = 0
 local_copy_dir = "/fdroid"
 
 keystore = "../keystore.jks"
-repo_keyalias = "calyxos"
+repo_keyalias = "localhost.localdomain"
+keydname = "CN=localhost.localdomain, OU=F-Droid"
