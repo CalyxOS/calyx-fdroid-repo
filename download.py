@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import re
 import requests
 import shutil
 import subprocess
+from urllib.parse import urlsplit
 
 import fdroidserver.common
 import fdroidserver.index
@@ -40,7 +42,13 @@ def main():
     json.dump(versions, file, ensure_ascii=False)
 
 def download(name, download_url, ignore):
-  retcode = subprocess.call(["wget", "--progress=dot:mega", "-O", "fdroid/repo/" + name, download_url])
+  if download_url.endswith(".apk"):
+    if os.path.isfile("fdroid/repo/" + name):
+      os.rename("fdroid/repo/" + name, "fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1])
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
+    os.rename("fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1], "fdroid/repo/" + name)
+  else:
+    retcode = subprocess.call(["wget", "--progress=dot:mega", "-nc", "--content-disposition", "-P", "fdroid/repo", download_url])
   if not ignore and retcode != 0:
     raise Exception("Failed downloading " + download_url)
 
