@@ -44,6 +44,9 @@ def main():
         download(apk["name"] + ".apk", apk["baseUrl"].format(arch=arch, ver=ver), ignore)
     else:
       download(apk["name"] + ".apk", apk["baseUrl"].format(ver=ver), ignore)
+  for apk in apks:
+    if not os.path.isfile("fdroid/repo/" + apk["name"] + ".apk"):
+      download(apk["name"] + ".apk", "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/fdroid/repo/" + apk["name"] + ".apk" ,ignore)
   with open('cache/versions.json', 'w') as file:
     json.dump(versions, file, ensure_ascii=False)
 
