@@ -21,7 +21,9 @@ def main():
     versions = json.load(file)
   for apk in apks:
     ver = ""
-    ignore = False
+    ignore = True
+    if "ignoreErrors" in apk:
+      ignore = apk["ignoreErrors"]
     if "version" in apk:
       verObj = apk["version"]
       if "json" in verObj:
@@ -29,13 +31,11 @@ def main():
       elif "regex" in verObj:
         ver = get_version_regex(verObj["url"], verObj["regex"])
       elif "fdroid" in verObj:
-        ver = get_version_fdroid(apk["baseUrl"].format(ver="?fingerprint=" + verObj["fingerprint"]), verObj["fdroid"])
+        ver = get_version_fdroid(apk["baseUrl"].format(ver="?fingerprint=" + verObj["fingerprint"]), verObj["fdroid"], ignore)
       if apk["name"] in versions and ver == versions[apk["name"]]:
         continue
       versions[apk["name"]] = ver
     print("Downloading " + apk["name"] + " " + ver)
-    if "ignoreErrors" in apk:
-      ignore = apk["ignoreErrors"]
     if "architectures" in apk:
       for arch in apk["architectures"]:
         download(apk["name"] + ".apk", apk["baseUrl"].format(arch=arch, ver=ver), ignore)
@@ -69,27 +69,48 @@ def get_version_json(url, query):
     version = version[query_part]
   return version
 
-def get_fdroid_index(url):
+def get_fdroid_index(url, ignore):
   global index
   global etag
   fdroidserver.common.config = {}
   fdroidserver.common.config['jarsigner'] = shutil.which('jarsigner')
-  print(url)
-  new_index, new_etag = fdroidserver.index.download_repo_index(url, etag)
+  try:
+    new_index, new_etag = fdroidserver.index.download_repo_index(url, etag)
+  except Exception as e:
+    print(e)
+    if index is not None:
+      return index
+    else:
+      raise Exception("Failed to get F-Droid index from " + url)
   if new_index is not None:
     index = new_index
     etag = new_etag
   return index
 
-def get_version_fdroid(url, query):
-  data = get_fdroid_index(url)
+def is_fdroid_apk_compatible(apk):
+  if not 'nativecode' in apk:
+    return True
+  for abi in apk['nativecode']:
+    if abi == "arm64-v8a":
+      return True
+    if abi == "armeabi-v7a":
+      return True
+    if abi == "armeabi":
+      return True
+
+def get_version_fdroid(url, query, ignore):
+  data = get_fdroid_index(url, ignore)
   for app in data['apps']:
     if app['packageName'] == query:
       for apk in data['packages'][app['packageName']]:
         # No idea why suggestedVersionCode is a string
-        if apk['versionCode'] == int(app['suggestedVersionCode']):
+        if apk['versionCode'] >= int(app['suggestedVersionCode']):
+          if is_fdroid_apk_compatible(apk):
+            return apk['apkName']
+      # Fallback to first compatible apk
+      for apk in data['packages'][app['packageName']]:
+        if is_fdroid_apk_compatible(apk):
           return apk['apkName']
-      return data['packages'][app['packageName']][0]['apkName']
 
 if __name__ == "__main__":
   main()
