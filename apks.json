@@ -72,14 +72,6 @@
     }
   },
   {
-    "name": "Orbot",
-    "baseUrl": "https://guardianproject.info/fdroid/repo/{ver}",
-    "version": {
-      "fdroid": "org.torproject.android",
-      "fingerprint": "B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135"
-    }
-  },
-  {
     "name": "RiseupVPN",
     "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
@@ -109,6 +101,14 @@
     "version": {
       "url": "https://updates.signal.org/android/latest.json",
       "json": "versionName"
+    }
+  },
+  {
+    "name": "Orbot",
+    "baseUrl": "https://guardianproject.info/fdroid/repo/{ver}",
+    "version": {
+      "fdroid": "org.torproject.android",
+      "fingerprint": "B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135"
     }
   },
   {
