@@ -78,14 +78,7 @@ def get_fdroid_index(url, ignore):
   global etag
   fdroidserver.common.config = {}
   fdroidserver.common.config['jarsigner'] = shutil.which('jarsigner')
-  try:
-    new_index, new_etag = fdroidserver.index.download_repo_index(url, etag)
-  except Exception as e:
-    print(e)
-    if index is not None:
-      return index
-    else:
-      raise Exception("Failed to get F-Droid index from " + url)
+  new_index, new_etag = fdroidserver.index.download_repo_index(url, etag)
   if new_index is not None:
     index = new_index
     etag = new_etag
