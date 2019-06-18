@@ -24,7 +24,7 @@ def main():
     versions = {}
   for apk in apks:
     ver = ""
-    ignore = False
+    ignore = True
     if "ignoreErrors" in apk:
       ignore = apk["ignoreErrors"]
     if "version" in apk:
