@@ -17,8 +17,11 @@ etag = None
 def main():
   with open("apks.json") as file:
     apks = json.load(file)
-  with open("cache/versions.json") as file:
-    versions = json.load(file)
+  if os.path.isfile("cache/versions.json"):
+    with open("cache/versions.json") as file:
+      versions = json.load(file)
+  else:
+    versions = {}
   for apk in apks:
     ver = ""
     ignore = True
