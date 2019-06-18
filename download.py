@@ -11,6 +11,9 @@ from urllib.parse import urlsplit
 import fdroidserver.common
 import fdroidserver.index
 
+index = {}
+etag = None
+
 def main():
   with open("apks.json") as file:
     apks = json.load(file)
@@ -26,7 +29,7 @@ def main():
       elif "regex" in verObj:
         ver = get_version_regex(verObj["url"], verObj["regex"])
       elif "fdroid" in verObj:
-        ver = get_version_fdroid(apk["baseUrl"].format(ver=""), verObj["fdroid"])
+        ver = get_version_fdroid(apk["baseUrl"].format(ver="?fingerprint=" + verObj["fingerprint"]), verObj["fdroid"])
       if apk["name"] in versions and ver == versions[apk["name"]]:
         continue
       versions[apk["name"]] = ver
@@ -43,8 +46,8 @@ def main():
 
 def download(name, download_url, ignore):
   if download_url.endswith(".apk"):
-    if os.path.isfile("fdroid/repo/" + name):
-      os.rename("fdroid/repo/" + name, "fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1])
+    #if os.path.isfile("fdroid/repo/" + name):
+    #  os.rename("fdroid/repo/" + name, "fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1])
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
     os.rename("fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1], "fdroid/repo/" + name)
   else:
@@ -66,11 +69,20 @@ def get_version_json(url, query):
     version = version[query_part]
   return version
 
-def get_version_fdroid(url, query):
+def get_fdroid_index(url):
+  global index
+  global etag
   fdroidserver.common.config = {}
   fdroidserver.common.config['jarsigner'] = shutil.which('jarsigner')
-  # TODO Add fingerprint, and use etag
-  data, etag = fdroidserver.index.download_repo_index(url, None, False)
+  print(url)
+  new_index, new_etag = fdroidserver.index.download_repo_index(url, etag)
+  if new_index is not None:
+    index = new_index
+    etag = new_etag
+  return index
+
+def get_version_fdroid(url, query):
+  data = get_fdroid_index(url)
   for app in data['apps']:
     if app['packageName'] == query:
       for apk in data['packages'][app['packageName']]:
