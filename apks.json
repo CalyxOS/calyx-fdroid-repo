@@ -1,5 +1,13 @@
 [
   {
+    "name": "AuroraStore",
+    "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "com.aurora.store",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
     "name": "Briar",
     "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
@@ -24,6 +32,22 @@
     }
   },
   {
+    "name": "DAVx5",
+   "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "at.bitfire.davdroid",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
+    "name": "DejaVuLocationService",
+   "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "org.fitchfamily.android.dejavu",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
     "name": "DuckDuckGoPrivacyBrowser",
    "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
@@ -40,6 +64,14 @@
     }
   },
   {
+    "name": "Maps",
+    "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "com.github.axet.maps",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
     "name": "MozillaNlpBackend",
     "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
@@ -52,6 +84,14 @@
     "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
       "fdroid": "com.artifex.mupdf.viewer.app",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
+    "name": "NominatimNlpBackend",
+    "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "org.microg.nlp.backend.nominatim",
       "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
     }
   },
@@ -80,6 +120,22 @@
     }
   },
   {
+    "name": "ScrambledExif",
+    "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "com.jarsilio.android.scrambledeggsif",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
+    "name": "Tasks",
+    "baseUrl": "https://f-droid.org/repo/{ver}",
+    "version": {
+      "fdroid": "org.dmfs.tasks",
+      "fingerprint": "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB"
+    }
+  },
+  {
     "name": "Weather",
     "baseUrl": "https://f-droid.org/repo/{ver}",
     "version": {
@@ -101,6 +157,14 @@
     "version": {
       "url": "https://updates.signal.org/android/latest.json",
       "json": "versionName"
+    }
+  },
+  {
+    "name": "LocationPrivacy",
+    "baseUrl": "https://guardianproject.info/fdroid/repo/{ver}",
+    "version": {
+      "fdroid": "info.guardianproject.locationprivacy",
+      "fingerprint": "B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135"
     }
   },
   {
