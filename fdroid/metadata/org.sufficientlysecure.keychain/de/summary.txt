@@ -1,0 +1,1 @@
+Dateien und Kommunikation verschlüsseln. Kompatibel mit OpenPGP.

@@ -1,0 +1,1 @@
+Um cliente de mensagens instantâneas XMPP criptografado, otimizada para celular

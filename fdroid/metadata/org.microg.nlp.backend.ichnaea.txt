@@ -9,7 +9,7 @@ Name:MozillaNlpBackend
 Auto Name:Mozilla UnifiedNlp Backend
 Summary:UnifiedNlp location provider (Mozilla)
 Description:
-MicroG backend that uses
+microG backend that uses
 [https://location.services.mozilla.com/ Mozilla Location Services].
 
 Location calculation is done online and therefor requires internet connection.

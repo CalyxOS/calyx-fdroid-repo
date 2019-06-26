@@ -1,0 +1,1 @@
+Client de missatgeria XMPP fàcil d'usar i amb encriptació, per a mòbils
