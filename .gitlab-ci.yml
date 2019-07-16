@@ -24,7 +24,7 @@ fdroid-repo:
   artifacts:
     paths:
     - public
-    - expire_in: 1 week
+    expire_in: 1 week
   only:
   - master
   - schedules
