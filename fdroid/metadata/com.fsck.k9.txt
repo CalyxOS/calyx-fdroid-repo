@@ -1,5 +1,5 @@
 Provides:org.fdroid.k9
-Categories:Internet
+Categories:Internet,Default
 License:Apache-2.0
 Web Site:https://k9mail.github.io/
 Source Code:https://github.com/k9mail/k-9

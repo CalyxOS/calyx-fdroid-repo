@@ -2,6 +2,7 @@ AntiFeatures:
   - NonFreeNet
 Categories:
   - Internet
+  - Default
 License: Apache-2.0
 WebSite: https://duckduckgo.com
 SourceCode: https://github.com/duckduckgo/Android

@@ -1,6 +1,7 @@
 Categories:
   - Security
   - Internet
+  - Default
 License: MPL
 WebSite: https://www.torproject.org/
 IssueTracker: https://trac.torproject.org/projects/tor/query?status=!closed&keywords=~tbb-mobile

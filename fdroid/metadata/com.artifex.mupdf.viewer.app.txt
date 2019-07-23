@@ -1,4 +1,4 @@
-Categories:Reading
+Categories:Reading,Default
 License:AGPL-3.0-or-later
 Web Site:https://mupdf.com
 Source Code:https://git.ghostscript.com/?p=mupdf-android-viewer.git;a=summary

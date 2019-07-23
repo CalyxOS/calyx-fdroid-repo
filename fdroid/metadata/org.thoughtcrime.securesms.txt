@@ -3,7 +3,7 @@ Source Code:https://github.com/signalapp/Signal-Android
 Web Site:https://www.signal.org
 Issue Tracker:https://support.signal.org/
 Summary:Signal Private Messenger
-Categories:Internet
+Categories:Internet,Default
 Description:
 Privacy is possible. Signal makes it easy.
 

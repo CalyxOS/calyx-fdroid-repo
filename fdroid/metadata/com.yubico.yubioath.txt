@@ -1,4 +1,4 @@
-Categories:Connectivity
+Categories:Connectivity,Default
 License:BSD-3-Clause
 Web Site:
 Source Code:https://github.com/Yubico/yubioath-android

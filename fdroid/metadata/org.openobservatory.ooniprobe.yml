@@ -1,6 +1,7 @@
 Categories:
   - Internet
   - Security
+  - Default
 License: BSD-2-Clause
 WebSite: https://ooni.torproject.org/
 SourceCode: https://github.com/ooni/probe-android

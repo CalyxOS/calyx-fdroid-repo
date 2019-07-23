@@ -1,4 +1,4 @@
-Categories:Internet
+Categories:Internet,Default
 License:GPL-3.0-only
 Author Name:bitfire web engineering
 Web Site:https://www.davx5.com/

@@ -3,6 +3,7 @@ AntiFeatures:
 Categories:
   - Multimedia
   - Internet
+  - Default
 License: GPL-3.0-only
 WebSite: https://secuso.org/pfa
 SourceCode: https://github.com/SecUSo/privacy-friendly-weather

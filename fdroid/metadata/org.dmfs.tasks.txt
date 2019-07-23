@@ -1,4 +1,4 @@
-Categories:Writing
+Categories:Writing,Default
 License:Apache-2.0
 Web Site:https://github.com/dmfs/opentasks/wiki
 Source Code:https://github.com/dmfs/opentasks
