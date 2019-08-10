@@ -41,9 +41,9 @@ def main():
     print("Downloading " + apk["name"] + " " + ver)
     if "architectures" in apk:
       for arch in apk["architectures"]:
-        download(apk["name"] + ".apk", apk["baseUrl"].format(arch=arch, ver=ver), ignore)
+        download(apk["name"] + ".apk", apk["baseUrl"].format(arch=arch, ver=ver, ver_stripped=ver.lstrip("v")), ignore)
     else:
-      download(apk["name"] + ".apk", apk["baseUrl"].format(ver=ver), ignore)
+      download(apk["name"] + ".apk", apk["baseUrl"].format(ver=ver, ver_stripped=ver.lstrip("v")), ignore)
   for apk in apks:
     if not os.path.isfile("fdroid/repo/" + apk["name"] + ".apk"):
       download(apk["name"] + ".apk", "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/fdroid/repo/" + apk["name"] + ".apk" ,ignore)
