@@ -33,3 +33,4 @@ fdroid-repo:
   cache:
     paths:
     - cache
+    - fdroid/repo/*.apk
