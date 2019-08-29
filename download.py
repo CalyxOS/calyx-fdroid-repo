@@ -17,6 +17,11 @@ etag = None
 def main():
   with open("apks.json") as file:
     apks = json.load(file)
+  if os.path.isfile("cache/versions.json"):
+    with open("cache/versions.json") as file:
+      versions = json.load(file)
+  else:
+    versions = {}
   for apk in apks:
     ver = ""
     ignore = True
@@ -30,6 +35,9 @@ def main():
         ver = get_version_regex(verObj["url"], verObj["regex"])
       elif "fdroid" in verObj:
         ver = get_version_fdroid(apk["baseUrl"].format(ver="?fingerprint=" + verObj["fingerprint"]), verObj["fdroid"], ignore)
+      if apk["name"] in versions and ver == versions[apk["name"]]:
+        continue
+      versions[apk["name"]] = ver
     print("Downloading " + apk["name"] + " " + ver)
     if "architectures" in apk:
       for arch in apk["architectures"]:
@@ -39,6 +47,8 @@ def main():
   for apk in apks:
     if not os.path.isfile("fdroid/repo/" + apk["name"] + ".apk"):
       download(apk["name"] + ".apk", "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/fdroid/repo/" + apk["name"] + ".apk" ,ignore)
+  with open('cache/versions.json', 'w') as file:
+    json.dump(versions, file, ensure_ascii=False)
 
 def download(name, download_url, ignore):
   if download_url.endswith(".apk"):

@@ -32,4 +32,4 @@ fdroid-repo:
   - schedules
   cache:
     paths:
-    - fdroid
+    - cache
