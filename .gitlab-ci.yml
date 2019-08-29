@@ -40,6 +40,8 @@ fdroid-repo:
 
 pages:
   stage: deploy
+  script:
+  - echo "Deploying F-Droid repo to GitLab pages"
   artifacts:
     paths:
     - public
