@@ -36,6 +36,7 @@ def main():
       elif "fdroid" in verObj:
         ver = get_version_fdroid(apk["baseUrl"].format(ver="?fingerprint=" + verObj["fingerprint"]), verObj["fdroid"], ignore)
       if apk["name"] in versions and ver == versions[apk["name"]]:
+        print("Using cached " + apk["name"])
         continue
       versions[apk["name"]] = ver
     print("Downloading " + apk["name"] + " " + ver)
@@ -84,6 +85,7 @@ def get_fdroid_index(new_url):
   fdroidserver.common.config = {}
   fdroidserver.common.config['jarsigner'] = shutil.which('jarsigner')
   try:
+    print("Downloading F-Droid index from " + new_url)
     new_index, etag = fdroidserver.index.download_repo_index(new_url)
   except Exception as e:
     print(e)
