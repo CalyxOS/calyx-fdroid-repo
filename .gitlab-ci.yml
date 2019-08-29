@@ -3,18 +3,14 @@ image: debian:buster
 variables:
   LC_ALL: "C.UTF-8"
 
-stages:
-  - build
-  - deploy
-
 before_script:
   - echo $fdroid_keystore_base64 | base64 -d >keystore.jks
   - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
   - apt-get update && apt-get install --no-install-recommends --yes wget fdroidserver && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-fdroid-repo:
-  stage: build
+pages:
+  stage: deploy
   script:
   - (cd fdroid/repo && while read -r line || [ -n "$line" ]; do rm -f $line; done < ../../cleanup.txt)
   - ./download.py
@@ -28,7 +24,7 @@ fdroid-repo:
   - cd .. && mkdir public && mv -v /fdroid public
   artifacts:
     paths:
-    - fdroid/repo/*.apk
+    - public
     expire_in: 1 week
   only:
   - master
@@ -37,14 +33,3 @@ fdroid-repo:
     paths:
     - cache
     - fdroid/repo/*.apk
-
-pages:
-  stage: deploy
-  script:
-  - echo "Deploying F-Droid repo to GitLab pages"
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-  - schedules
