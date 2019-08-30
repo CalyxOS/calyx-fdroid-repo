@@ -9,9 +9,6 @@
   },
   {
     "name": "GmsCore",
-    "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/microg/GmsCore/GmsCore.apk",
-    "version": {
-
-    }
+    "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/microg/GmsCore/GmsCore.apk"
   }
 ]
