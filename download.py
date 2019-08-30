@@ -52,12 +52,16 @@ def main():
     json.dump(versions, file, ensure_ascii=False)
 
 def download(name, download_url, ignore):
-  if download_url.endswith(".apk"):
+  if download_url.endswith(".apk") or download_url.endswith(".apk.lz"):
     #if os.path.isfile("fdroid/repo/" + name):
     #  os.rename("fdroid/repo/" + name, "fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1])
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-N", "-P", "fdroid/repo", download_url])
     if retcode == 0:
-      os.rename("fdroid/repo/" + os.path.split(urlsplit(download_url).path)[-1], "fdroid/repo/" + name)
+      apk = os.path.split(urlsplit(download_url).path)[-1]
+      if download_url.endswith(".apk.lz"):
+        subprocess.call(["lzip", "-d", "-f", "fdroid/repo/" + apk])
+        apk = os.path.splitext(os.path.basename(apk))[0]
+      os.rename("fdroid/repo/" + apk, "fdroid/repo/" + name)
   else:
     retcode = subprocess.call(["wget", "--progress=dot:mega", "-nc", "--content-disposition", "-P", "fdroid/repo", download_url])
   if not ignore and retcode != 0:
