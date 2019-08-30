@@ -14,5 +14,13 @@
   {
     "name": "Chromium",
     "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/apps/Chromium/MonochromePublic.apk"
+  },
+  {
+    "name": "GoogleMaps",
+    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/raw/master/app/com.google.android.apps.maps/21/400-480-560-640/1023405244.apk"
+  },
+  {
+    "name": "GoogleCamera",
+    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/raw/master/app/com.google.android.googlecamera/28/nodpi/49456928.apk.lz"
   }
 ]
