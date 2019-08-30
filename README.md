@@ -6,9 +6,9 @@ Currently included (alphabetically):
 * 
 
 Add this URL to F-Droid:
-https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=TBD
+https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6
 
-[![Repo URL QRcode](fdroid/public/repo-qrcode.png)](https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=TBD)
+[![Repo URL QRcode](fdroid/public/repo-qrcode.png)](https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6)
 
 Both, this Gitlab repository and this unofficial F-Droid repository
 are not affiliated to, nor have been authorized, sponsored or otherwise approved by the app developers.
