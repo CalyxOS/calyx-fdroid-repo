@@ -1,0 +1,21 @@
+Categories:
+  - System
+License: Apache-2.0
+WebSite: https://microg.org/
+SourceCode: https://github.com/microg/android_packages_apps_GmsCore
+IssueTracker: https://github.com/microg/android_packages_apps_GmsCore/issues
+Changelog: https://github.com/microg/android_packages_apps_GmsCore/releases
+
+Name: microG Services Core
+AutoName: microG Services Core
+Summary: Re-Implementation of Play Services
+Description: |-
+    microG GmsCore is a FLOSS (Free/Libre Open Source Software) framework
+    to allow applications designed for Google Play Services to run on systems,
+    where Play Services is not available.
+
+    As the original Play Services, microG GmsCore allows you to
+    contact certain Google services. These services are not open-source.
+
+RepoType: git
+Repo: https://github.com/microg/android_packages_apps_GmsCore/
