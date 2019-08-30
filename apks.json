@@ -10,5 +10,9 @@
   {
     "name": "GmsCore",
     "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/microg/GmsCore/GmsCore.apk"
+  },
+  {
+    "name": "Chromium",
+    "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/apps/Chromium/MonochromePublic.apk"
   }
 ]

@@ -1,0 +1,16 @@
+Categories:
+  - Internet
+License: BSD-3-Clause
+WebSite: https://calyxos.org
+SourceCode: https://gitlab.com/calyxos/platform_prebuilts_calyx/tree/pie/apps/Chromium/patches
+IssueTracker: https://gitlab.com/calyxos/calyxos/issues
+Changelog: https://gitlab.com/calyxos/platform_prebuilts_calyx/commits/pie/apps/Chromium
+
+Name: CalyxOS Chromium
+AutoName: Chromium
+Summary: Chromium browser with CalyxOS additions
+Description: |-
+    Chromium is the open source version of Google Chrome.
+    This version has additional changes applied by The Calyx Institute
+    for usage with CalyxOS.
+    It also provides the system Webview, which is used by many apps.
