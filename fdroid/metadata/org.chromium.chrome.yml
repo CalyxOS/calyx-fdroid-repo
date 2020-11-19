@@ -14,3 +14,6 @@ Description: |-
     This version has additional changes applied by The Calyx Institute
     for usage with CalyxOS.
     It also provides the system Webview, which is used by many apps.
+
+AutoUpdateMode: None
+UpdateCheckMode: None

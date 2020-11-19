@@ -4,7 +4,6 @@ License: Proprietary
 WebSite: https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera
 
 Name: Google Camera
-Summary: 
 Description: |-
     This app is taken from the Play Store as-is
 
@@ -26,3 +25,6 @@ Description: |-
     • Microphone: Required in order to record audio with every video.
     • Storage: Required in order to save picture and videos.
     • Location: Required if you would like to record location information with your pictures and videos.
+
+AutoUpdateMode: None
+UpdateCheckMode: None

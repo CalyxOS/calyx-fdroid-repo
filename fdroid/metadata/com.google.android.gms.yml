@@ -19,3 +19,6 @@ Description: |-
 
 RepoType: git
 Repo: https://github.com/microg/android_packages_apps_GmsCore/
+
+AutoUpdateMode: None
+UpdateCheckMode: None

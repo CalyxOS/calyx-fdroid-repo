@@ -4,7 +4,6 @@ License: Proprietary
 WebSite: https://play.google.com/store/apps/details?id=com.google.android.apps.maps
 
 Name: Google Maps
-Summary: 
 Description: |-
     This app is taken from the Play Store as-is
 
@@ -29,3 +28,6 @@ Description: |-
     • Indoor maps to quickly find your way inside big places like airports, malls and stadiums
 
     * Some features not available in all countries
+
+AutoUpdateMode: None
+UpdateCheckMode: None
