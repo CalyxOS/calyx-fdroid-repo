@@ -25,7 +25,7 @@
   },
   {
     "name": "GoogleMaps",
-    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/raw/e92168e7201735b02083bd3bce68de2011d491ea/app/com.google.android.apps.maps/21/400-480-560-640/1023503244.apk"
+    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/-/raw/master/app/com.google.android.apps.maps/21/nodpi/1054101240.apk"
   },
   {
     "name": "GoogleCamera",
