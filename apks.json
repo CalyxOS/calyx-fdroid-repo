@@ -12,8 +12,16 @@
     "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/microg/GmsCore/GmsCore.apk"
   },
   {
-    "name": "Chromium",
-    "baseUrl": "https://gitlab.com/calyxos/platform_prebuilts_calyx/raw/pie/apps/Chromium/MonochromePublic.apk"
+    "name": "TrichromeChrome",
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11/TrichromeChrome.apk"
+  },
+  {
+    "name": "TrichromeLibrary",
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11/TrichromeLibrary.apk"
+  },
+  {
+    "name": "TrichromeWebView",
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11/TrichromeWebView.apk"
   },
   {
     "name": "GoogleMaps",

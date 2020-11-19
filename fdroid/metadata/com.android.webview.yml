@@ -6,14 +6,14 @@ SourceCode: https://gitlab.com/CalyxOS/chromium-patches
 IssueTracker: https://gitlab.com/CalyxOS/calyxos/issues
 Changelog: https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/commits/android11
 
-Name: CalyxOS Chromium
-AutoName: Chromium
-Summary: Chromium browser with CalyxOS additions
+Name: CalyxOS Android WebView
+AutoName: Android System WebView
+Summary: Chromium based Android Webview with CalyxOS additions
 Description: |-
-    Chromium is the open source version of Google Chrome.
-    This version has additional changes applied by The Calyx Institute
-    for usage with CalyxOS.
-    It also provides the system Webview, which is used by many apps.
+    Android WebView is a system component powered by
+    Chromium, which is the open source version of Google Chrome.
+    It is used by many apps to display web content, including
+    some built into the OS such as DuckDuckGo Privacy Browser.
 
     It depends on Trichrome Library and that has to be updated first
     to install updates for this application
