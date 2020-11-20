@@ -1,4 +1,4 @@
-image: debian:buster
+image: debian:bullseye
 
 variables:
   LC_ALL: "C.UTF-8"
