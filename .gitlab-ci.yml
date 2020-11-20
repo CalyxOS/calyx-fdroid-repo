@@ -8,6 +8,10 @@ before_script:
   - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
   - apt-get update && apt-get install --no-install-recommends --yes wget fdroidserver lzip apksigner && apt-get clean && rm -rf /var/lib/apt/lists/*
+  # Debian has apksigner depend on binfmt support which isn't very docker friendly
+  # We create a shell wrapper instead
+  - echo -e '#!/bin/sh\njava -jar /usr/lib/android-sdk/build-tools/debian/apksigner.jar "$@"' > /usr/local/bin/apksigner
+  - chmod +x /usr/local/bin/apksigner
 
 pages:
   stage: deploy
