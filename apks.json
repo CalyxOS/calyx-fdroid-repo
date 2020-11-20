@@ -30,5 +30,9 @@
   {
     "name": "GoogleCamera",
     "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/-/raw/master/app/com.google.android.googlecamera/29/nodpi/61060549.apk"
+  },
+  {
+    "name": "StorageManager",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/939bea02b311b9d0575498cbda85162ca0ff51d0/StorageManager/StorageManager.apk"
   }
 ]

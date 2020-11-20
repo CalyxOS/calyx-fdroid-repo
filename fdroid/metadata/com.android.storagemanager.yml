@@ -1,0 +1,18 @@
+AuthorName: ''
+Categories:
+- fdroid
+CurrentVersionCode: 2147483647
+IssueTracker: 'https://gitlab.com/CalyxOS/CalyxOS/issues'
+Name: Seamless Update Client
+SourceCode: 'https://gitlab.com/CalyxOS/platform_packages_apps_StorageManager'
+Summary: 'System Updater and Storage Manager'
+WebSite: 'https://calyxos.org'
+Changelog: 'https://gitlab.com/CalyxOS/CalyxOS/-/issues/110'
+
+Description: |-
+    Seamless Update Client is the System Update Client used in CalyxOS
+    This update is needed to workaround an issue with the April 2020 update
+    of CalyxOS. Simply install this update and launch the update client
+    either by going to Settings -> System -> System update settings, or
+    via the launcher (named Updater, with a matching icon), and it
+    will download and install the update.
