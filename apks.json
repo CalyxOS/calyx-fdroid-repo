@@ -9,11 +9,11 @@
   },
   {
     "name": "GmsCore-walleye",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/83bbb869e7bd28ec6d59110b50d8f12539d1b450/microg/GmsCore/GmsCore-walleye.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/microg/GmsCore/GmsCore-walleye.apk"
   },
   {
     "name": "GmsCore-sunfish",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/83bbb869e7bd28ec6d59110b50d8f12539d1b450/microg/GmsCore/GmsCore-sunfish.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/microg/GmsCore/GmsCore-sunfish.apk"
   },
   {
     "name": "TrichromeChrome",
