@@ -8,10 +8,6 @@
     }
   },
   {
-    "name": "GmsCore-walleye",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/microg/GmsCore/GmsCore-walleye.apk"
-  },
-  {
     "name": "TrichromeChrome",
     "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11-qpr1/TrichromeChrome.apk"
   },
