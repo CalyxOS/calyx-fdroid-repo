@@ -1,4 +1,4 @@
-image: debian:bullseye
+image: registry.gitlab.com/calyxos/ci-images-fdroid-repo:latest
 
 variables:
   LC_ALL: "C.UTF-8"
@@ -7,11 +7,6 @@ before_script:
   - echo $fdroid_keystore_base64 | base64 -d >keystore.jks
   - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
-  - apt-get update && apt-get install --no-install-recommends --yes wget fdroidserver lzip apksigner git && apt-get clean && rm -rf /var/lib/apt/lists/*
-  # Debian has apksigner depend on binfmt support which isn't very docker friendly
-  # We create a shell wrapper instead
-  - echo -e '#!/bin/sh\njava -jar /usr/lib/android-sdk/build-tools/debian/apksigner.jar "$@"' > /usr/local/bin/apksigner
-  - chmod +x /usr/local/bin/apksigner
   # Patch fdroidserver for microG signature spoofing
   - git clone https://gitlab.com/fdroid/fdroidserver -b 1.1.10
   - git -C fdroidserver apply ../0001-update-Spoof-signature-to-Google-s-for-microG.patch
