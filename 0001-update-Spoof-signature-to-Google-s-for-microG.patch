@@ -1,4 +1,4 @@
-From 3d43563916f4b6eded6c264914d5e51a27237960 Mon Sep 17 00:00:00 2001
+From 7e1a8a7dd949e14b8dbeef6b098829939714ee98 Mon Sep 17 00:00:00 2001
 From: Chirayu Desai <chirayudesai1@gmail.com>
 Date: Mon, 23 Nov 2020 22:27:27 +0530
 Subject: [PATCH] update: Spoof signature to Google's for microG
@@ -11,10 +11,10 @@ Subject: [PATCH] update: Spoof signature to Google's for microG
  1 file changed, 5 insertions(+)
 
 diff --git a/fdroidserver/update.py b/fdroidserver/update.py
-index 588900743a..79a07d6b08 100644
+index afde773e42..c6e0c28100 100644
 --- a/fdroidserver/update.py
 +++ b/fdroidserver/update.py
-@@ -1068,6 +1068,11 @@ def scan_apk(apk_file):
+@@ -1367,6 +1367,11 @@ def scan_apk(apk_file):
      apk['sig'] = getsig(apk_file)
      if not apk['sig']:
          raise BuildException("Failed to get apk signature")
@@ -27,5 +27,5 @@ index 588900743a..79a07d6b08 100644
                                                                 apk_file))
      if not apk.get('signer'):
 -- 
-2.29.2
+2.32.0
 

@@ -8,7 +8,7 @@ before_script:
   - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
   # Patch fdroidserver for microG signature spoofing
-  - git clone https://gitlab.com/fdroid/fdroidserver -b 1.1.10
+  - git clone https://gitlab.com/fdroid/fdroidserver -b 2.0
   - git -C fdroidserver apply ../0001-update-Spoof-signature-to-Google-s-for-microG.patch
 
 pages:
@@ -21,7 +21,7 @@ pages:
   - echo "keystorepass=\"$fdroid_keystorepass\"" >>config.py
   - ../fdroidserver/fdroid update --pretty
   - rm -rf archive
-  - mkdir /fdroid && ../fdroidserver/fdroid server update
+  - mkdir /fdroid && ../fdroidserver/fdroid deploy
   - rm -rf /fdroid/archive
   - cd .. && mkdir public && mv -v /fdroid public
   artifacts:
