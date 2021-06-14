@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4939ab3_4e5ad5ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000023
+      },
+      "writtenOn": "2021-06-14T13:42:42Z",
+      "side": 1,
+      "message": "Uploaded to gerrit as requested.",
+      "revId": "a8f01a72e442463dd5e2b1cdf99d9a356afd36b2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
