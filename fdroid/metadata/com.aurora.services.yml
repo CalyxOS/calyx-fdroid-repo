@@ -9,13 +9,12 @@ WebSite: 'https://calyxos.org'
 Changelog: 'https://gitlab.com/CalyxOS/calyxos/-/issues/550'
 
 Description: |-
+    IMPORTANT: Install this update to prevent app uninstallation when
+    Aurora Store 4.0.6 tries to update them.
+
     Aurora Services allow you to install updates in the background
     without having to confirm. This is the CalyxOS version of Aurora
     Services.
-
-    Note: This is known to not work with Aurora Store 4.0.6, however
-    it will work fine with Aurora Store 4.0.5 and 4.0.7, which
-    should be available on F-Droid shortly.
 
     You will still need to confirm app installs and uninstalls,
     only updates are allowed without confirmation in this version.
