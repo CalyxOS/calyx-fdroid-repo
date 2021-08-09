@@ -46,5 +46,9 @@
   {
     "name": "AuroraStorePrivilegedExtension-bramble",
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/AuroraServices/AuroraStorePrivilegedExtension-bramble.apk"
+  },
+  {
+    "name": "FDroid",
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_fdroid/-/raw/android11-qpr1/F-Droid.apk"
   }
 ]
