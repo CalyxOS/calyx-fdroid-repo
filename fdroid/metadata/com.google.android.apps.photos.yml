@@ -1,0 +1,21 @@
+Categories:
+  - System
+License: Apache-2.0
+WebSite: https://calyxos.org/news/2021/09/30/gcam-photos-preview/
+SourceCode: https://gitlab.com/CalyxOS/platform_external_calyx_GCamPhotosPreview
+
+Name: GCam Photos Preview
+Summary: Preview photos from Google Camera
+Description: |-
+    If you have Google Photos installed, you can safely ignore this application.
+
+    GCam Photos Preview lets you preview photos taken in Google Camera without
+    needing to install the proprietary Google Photos application.
+
+    It pretends to be Google Photos to do that.
+
+RepoType: git
+Repo: https://gitlab.com/CalyxOS/platform_external_calyx_GCamPhotosPreview
+
+AutoUpdateMode: None
+UpdateCheckMode: None

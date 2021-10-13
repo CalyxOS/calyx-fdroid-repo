@@ -46,5 +46,9 @@
   {
     "name": "GmsCore",
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/microg/GmsCore/GmsCore-common.apk"
+  },
+  {
+    "name": "GCamPhotosPreview",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/GCamPhotosPreview/GCamPhotosPreview-common.apk"
   }
 ]
