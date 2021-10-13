@@ -20,14 +20,6 @@
     "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11-qpr1/TrichromeWebView.apk"
   },
   {
-    "name": "GoogleMaps",
-    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/-/raw/master/app/com.google.android.apps.maps/21/nodpi/1054101240.apk"
-  },
-  {
-    "name": "GoogleCamera",
-    "baseUrl": "https://gitlab.opengapps.org/opengapps/arm64/-/raw/master/app/com.google.android.googlecamera/29/nodpi/61060549.apk"
-  },
-  {
     "name": "StorageManager",
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/939bea02b311b9d0575498cbda85162ca0ff51d0/StorageManager/StorageManager.apk"
   },
