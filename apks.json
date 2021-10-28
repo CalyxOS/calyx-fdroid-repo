@@ -25,19 +25,19 @@
   },
   {
     "name": "AuroraStorePrivilegedExtension-walleye",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/AuroraServices/AuroraStorePrivilegedExtension-walleye.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/AuroraServices/AuroraStorePrivilegedExtension-walleye.apk"
   },
   {
     "name": "AuroraStorePrivilegedExtension-sunfish",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/AuroraServices/AuroraStorePrivilegedExtension-sunfish.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/AuroraServices/AuroraStorePrivilegedExtension-sunfish.apk"
   },
   {
     "name": "AuroraStorePrivilegedExtension-redfin",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/AuroraServices/AuroraStorePrivilegedExtension-redfin.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/AuroraServices/AuroraStorePrivilegedExtension-redfin.apk"
   },
   {
     "name": "AuroraStorePrivilegedExtension-bramble",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/AuroraServices/AuroraStorePrivilegedExtension-bramble.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/AuroraServices/AuroraStorePrivilegedExtension-bramble.apk"
   },
   {
     "name": "FDroid",
@@ -45,10 +45,10 @@
   },
   {
     "name": "GmsCore",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/microg/GmsCore/GmsCore-common.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/microg/GmsCore/GmsCore-common.apk"
   },
   {
     "name": "GCamPhotosPreview",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/master/GCamPhotosPreview/GCamPhotosPreview-common.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/GCamPhotosPreview/GCamPhotosPreview-common.apk"
   }
 ]
