@@ -4,7 +4,7 @@ License: BSD-3-Clause
 WebSite: https://calyxos.org
 SourceCode: https://gitlab.com/CalyxOS/chromium-patches
 IssueTracker: https://gitlab.com/CalyxOS/calyxos/issues
-Changelog: https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/commits/android11
+Changelog: https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/commits/android12
 
 Name: CalyxOS Android WebView
 AutoName: Android System WebView
