@@ -9,15 +9,15 @@
   },
   {
     "name": "TrichromeChrome",
-    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11-qpr1/TrichromeChrome.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android12/TrichromeChrome.apk"
   },
   {
     "name": "TrichromeLibrary",
-    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11-qpr1/TrichromeLibrary.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android12/TrichromeLibrary.apk"
   },
   {
     "name": "TrichromeWebView",
-    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android11-qpr1/TrichromeWebView.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_chromium_arm64/-/raw/android12/TrichromeWebView.apk"
   },
   {
     "name": "StorageManager",
@@ -41,7 +41,7 @@
   },
   {
     "name": "FDroid",
-    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_fdroid/-/raw/android11-qpr1/F-Droid.apk"
+    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_fdroid/-/raw/android12/F-Droid.apk"
   },
   {
     "name": "GmsCore",
