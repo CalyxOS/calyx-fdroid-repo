@@ -40,6 +40,50 @@
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/AuroraServices/AuroraStorePrivilegedExtension-bramble.apk"
   },
   {
+    "name": "Dialer-crosshatch",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-crosshatch.apk"
+  },
+  {
+    "name": "Dialer-sunfish",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-sunfish.apk"
+  },
+  {
+    "name": "Dialer-redfin",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-redfin.apk"
+  },
+  {
+    "name": "Dialer-bramble",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-bramble.apk"
+  },
+  {
+    "name": "Dialer-barbet",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-barbet.apk"
+  },
+  {
+    "name": "Dialer-oriole",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-oriole.apk"
+  },
+  {
+    "name": "Dialer-raven",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-raven.apk"
+  },
+  {
+    "name": "Dialer-FP4",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-FP4.apk"
+  },
+  {
+    "name": "Dialer-kebab",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-kebab.apk"
+  },
+  {
+    "name": "Dialer-lemonade",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-lemonade.apk"
+  },
+  {
+    "name": "Dialer-lemonadep",
+    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-lemonadep.apk"
+  },
+  {
     "name": "FDroid",
     "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_fdroid/-/raw/android12L/F-Droid.apk"
   },

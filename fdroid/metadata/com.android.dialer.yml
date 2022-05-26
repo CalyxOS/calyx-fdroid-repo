@@ -1,0 +1,13 @@
+AuthorName: ''
+Categories:
+- fdroid
+CurrentVersionCode: 2147483647
+IssueTracker: 'https://gitlab.com/CalyxOS/CalyxOS/issues'
+Name: Dialer
+SourceCode: 'https://gitlab.com/CalyxOS/platform_packages_apps_Dialer'
+Summary: 'Make calls'
+WebSite: 'https://calyxos.org'
+
+Description: |-
+    The default Dialer / Phone / Telephone application.
+    Includes a fix for Visual VoiceMail on carriers where it was working earlier.
