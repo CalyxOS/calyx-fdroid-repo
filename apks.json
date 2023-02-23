@@ -84,10 +84,6 @@
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/Dialer/Dialer-lemonadep.apk"
   },
   {
-    "name": "FDroid",
-    "baseUrl": "https://gitlab.com/CalyxOS/platform_prebuilts_calyx_fdroid/-/raw/android12L/F-Droid.apk"
-  },
-  {
     "name": "GmsCore",
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/microg/GmsCore/GmsCore-common.apk"
   },
