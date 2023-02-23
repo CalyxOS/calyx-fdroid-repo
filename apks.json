@@ -8,18 +8,6 @@
     }
   },
   {
-    "name": "TrichromeChrome",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/chromium/universal-signed-common.apk"
-  },
-  {
-    "name": "TrichromeLibrary",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/chromium/TrichromeLibrary6432-signed-common.apk"
-  },
-  {
-    "name": "TrichromeWebView",
-    "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/main/chromium/TrichromeWebView6432-signed-common.apk"
-  },
-  {
     "name": "StorageManager",
     "baseUrl": "https://gitlab.com/CalyxOS/calyx-fdroid-repo-apks/-/raw/939bea02b311b9d0575498cbda85162ca0ff51d0/StorageManager/StorageManager.apk"
   },
