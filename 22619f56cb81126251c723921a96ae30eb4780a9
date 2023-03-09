@@ -16,6 +16,23 @@
       "message": "The output of the two methods is not compatible, the _v1 outputs the index-v1 structure, and the _v2 outputs the index-v2 structure.  So the code will have to be ported to use the index-v2 structure.  That\u0027s probably not hard though.",
       "revId": "22619f56cb81126251c723921a96ae30eb4780a9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2fba12b_14aac941",
+        "filename": "download.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-03-09T15:22:19Z",
+      "side": 1,
+      "message": "This is the only method where the index is used.",
+      "revId": "22619f56cb81126251c723921a96ae30eb4780a9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
