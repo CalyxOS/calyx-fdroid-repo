@@ -90,7 +90,7 @@ def get_fdroid_index(new_url):
   fdroidserver.common.config['jarsigner'] = shutil.which('jarsigner')
   try:
     print("Downloading F-Droid index from " + new_url)
-    new_index, etag = fdroidserver.index.download_repo_index(new_url)
+    new_index, etag = fdroidserver.index.download_repo_index_v2(new_url)
   except Exception as e:
     print(e)
     if index is not None:
