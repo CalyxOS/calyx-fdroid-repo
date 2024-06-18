@@ -34,4 +34,6 @@ pages:
   cache:
     paths:
     - cache
+    - fdroid/tmp # this is actually the repo cache dir we should be keeping
+    - fdroid/repo/icons # needed for cache usage not to crash
     - fdroid/repo/*.apk
