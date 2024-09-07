@@ -1,4 +1,4 @@
-From 48cc99600b11b4ca47ba3e79e1a9830bb9168cac Mon Sep 17 00:00:00 2001
+From 0feb74bd3acfa2b38773102347851a1d01314e83 Mon Sep 17 00:00:00 2001
 From: Chirayu Desai <chirayudesai1@gmail.com>
 Date: Mon, 23 Nov 2020 22:27:27 +0530
 Subject: [PATCH] update: Spoof signature to Google's for microG
@@ -7,25 +7,31 @@ Subject: [PATCH] update: Spoof signature to Google's for microG
   would be signed with a different key than what we have the OS
   think
 ---
- fdroidserver/update.py | 5 +++++
- 1 file changed, 5 insertions(+)
+ fdroidserver/update.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
 
 diff --git a/fdroidserver/update.py b/fdroidserver/update.py
-index 06dd762f..18f86548 100644
+index dd3bba50..062be000 100644
 --- a/fdroidserver/update.py
 +++ b/fdroidserver/update.py
-@@ -1247,6 +1247,11 @@ def scan_apk(apk_file, require_signature=True):
+@@ -1501,12 +1501,16 @@ def scan_apk(apk_file, require_signature=True):
      if require_signature:
          if not apk['sig']:
              raise BuildException(_("Failed to get APK signing key fingerprint"))
 +        # Spoof signature for microG GmsCore and FakeStore
 +        if apk['packageName'] == "com.google.android.gms" or apk['packageName'] == "com.android.vending":
-+            logging.warning(_("Spoofing signature for {appid} having original signature {sig}")
-+                            .format(appid=apk['packageName'], sig=apk['sig']))
++            logging.warning(_("Spoofing signature for {appid} with original signature {sig}")
++                        .format(appid=apk['packageName'], sig=apk['sig']))
 +            apk['sig'] = 'd91564be0d13dcff260fe019eeea8cd8' # Google's signature
          apk['signer'] = common.apk_signer_fingerprint(
              os.path.join(os.getcwd(), apk_file)
          )
+         if not apk.get('signer'):
+             raise BuildException(_("Failed to get APK signing key fingerprint"))
+-
+     # Get size of the APK
+     apk['size'] = os.path.getsize(apk_file)
+ 
 -- 
-2.39.2
+2.46.0
 
