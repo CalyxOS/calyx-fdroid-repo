@@ -7,7 +7,7 @@ before_script:
   - echo $fdroid_keystore_base64 | base64 -d >keystore.jks
   - chmod 600 fdroid/config.py keystore.jks
   - mkdir -p fdroid/repo
-  - git clone https://gitlab.com/fdroid/fdroidserver -b 2.3a0
+  - git clone https://gitlab.com/fdroid/fdroidserver -b 2.3a2
   # Patch fdroidserver for microG signature spoofing
   - git -C fdroidserver apply ../0001-update-Spoof-signature-to-Google-s-for-microG.patch
 
