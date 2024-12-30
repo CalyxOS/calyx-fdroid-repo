@@ -6,8 +6,8 @@ SourceCode: https://github.com/microg/android_packages_apps_GmsCore
 IssueTracker: https://github.com/microg/android_packages_apps_GmsCore/issues
 Changelog: https://github.com/microg/android_packages_apps_GmsCore/releases
 
-Name: microG Services Core
-AutoName: microG Services Core
+Name: microG Services
+AutoName: microG Services
 Summary: Re-Implementation of Play Services
 Description: |-
     microG GmsCore is a FLOSS (Free/Libre Open Source Software) framework
