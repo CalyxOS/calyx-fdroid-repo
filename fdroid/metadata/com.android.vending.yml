@@ -1,0 +1,19 @@
+Categories:
+  - System
+License: Apache-2.0
+WebSite: https://microg.org/
+SourceCode: https://github.com/microg/android_packages_apps_GmsCore
+IssueTracker: https://github.com/microg/android_packages_apps_GmsCore/issues
+Changelog: https://github.com/microg/android_packages_apps_GmsCore/releases
+
+Name: microG Companion
+AutoName: microG Companion
+Summary: Companion app to microG Services
+Description: |-
+    Providing Play Store services to apps. Required for Play Services clients to connect to Play Services.
+
+RepoType: git
+Repo: https://github.com/microg/android_packages_apps_GmsCore/
+
+AutoUpdateMode: None
+UpdateCheckMode: None
