@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd45ad48_414ec9a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-01-01T15:39:56Z",
+      "side": 1,
+      "message": "```\napksigner verify --print-certs /tmp/com.google.android.gms_24.47.62_\\(040400-705963428\\)-244762004_minAPI23\\(arm64-v8a\\,armeabi-v7a\\)\\(nodpi\\)_apkmirror.com.apk\n\nSigner #1 certificate SHA-256 digest: f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83\n```",
+      "revId": "b03df76e9610e602793e24b0da9fb160dac7a3a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
